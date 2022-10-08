@@ -1,0 +1,22 @@
+<!--5. Embed Python swap program in html document-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>py</title>
+   <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" >
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+    <py-script>
+      print("let's swap two num ")
+      def swap(a,b):
+            print("User Entered A value :%d and B value :%d before swapping "%(a,b))
+            a,b=b,a
+            print("After Swapping a=%d and b=%d"%(a,b))
+      print()
+      ob=swap(int(input()),int(input()))
+    </py-script>
+  </body>
+</html>

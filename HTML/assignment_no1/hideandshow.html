@@ -1,0 +1,53 @@
+<!--6. Create a paragraph summariser, where you can toggle between hide and view
+option.-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>hide&show</title> 
+    </head>
+    <body>
+      <h1>Hide and show</h1>  
+      <button onclick="myFunction()">To Hide or Show</button>
+      <div id="paragraph">
+
+        <span>
+          <h2>Ghost Story</h2>
+          <p>This happened in 2016 when I was in Kolkata. We (me, my husband and son) used to live in an apartment 
+            on the second floor of an old building near Hoogly river. Actually it was a government allotted place to my husband.</p><br>
+          
+          <p>It was a normal day for us. At night we went to sleep around 11pm. My bedroom had a double bed facing a wall 
+            which had television on it. The rest of the wall was empty except for a wall clock. The end of the wall had the 
+            door through which we entered into the dining area. The door was closed and the lights were off. I was sleeping 
+            in the middle of the bed with my husband and son on either side.</p><br>
+
+          <p>At around 1pm (I will tell you how I got to know the time later), although in deep sleep, I sensed someone 
+            staring at me. I cannot explain how I sensed it. I felt uncomfortable and opened my eyes when I saw something 
+            bright hanging in the air at the end of the bed. I know it's funny but it actually resembled something like an 
+            astronaut in their white suit except that the suit was bright. I could see it clearly. It scared the hell out of me. 
+            I closed my eyes and started shouting for my husband to wake up.</p><br>
+
+          <p>He woke up and switched on the light. Nothing was there. That's when I saw the time on the wall clock. 
+            My hubby told me that I must have been dreaming but I don't think so. I remember seeing it clearly. Afterwards,
+            we slept through that night peacefully but with the lights on which we did for the coming nights too. Nothing of this 
+            sort happened again.</p><br>
+
+            <p>Can anyone explain what had happened? Was I really dreaming? If not then what could it be? It was nothing like 
+            the ghosts we see in movies. I don't understand what happened.</p><br></span>
+            
+        </div>
+        <br>
+        
+        <script>
+        function myFunction() {
+            var x = document.getElementById("paragraph");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+        </script>
+        
+    </body>
+</html>
